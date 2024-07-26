@@ -1,0 +1,5 @@
+.app {
+    margin-top: 85px;
+    display: grid;
+    place-items: center;
+}
