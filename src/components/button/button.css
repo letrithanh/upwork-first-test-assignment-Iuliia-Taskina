@@ -1,0 +1,20 @@
+.button {
+    height: 40px;
+    width: 340px;
+    padding: 10px 20px;
+    border-radius: 4px;
+    background-color: var(--btn-default);
+    color: var(--btn-text-default);
+    border: none;
+    font-size: 14px;
+}
+
+.button:hover {
+    background-color: var(--btn-hover);
+    cursor: pointer;
+}
+
+.button:active {
+    background-color: var(--btn-default);
+    cursor: default;
+}

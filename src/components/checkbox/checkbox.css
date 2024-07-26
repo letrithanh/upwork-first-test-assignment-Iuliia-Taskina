@@ -1,0 +1,95 @@
+.checkbox {
+    display: grid;
+    place-items: center;
+}
+
+/* Default state */
+.checkbox div {
+    display: grid;
+    place-items: center;
+    width: 25px;
+    height: 25px;
+    border-radius: 6px;
+    background-color: var(--color-white);
+    cursor: pointer;
+    border: 1px solid #CDCDCD99;
+}
+
+
+.checkbox input[type="checkbox"] + div svg {
+    opacity: 0;
+}
+
+/* Default hover state */
+.checkbox input[type="checkbox"] + div:hover {
+    border: 1px solid #BDBDBD;
+}
+
+.checkbox input[type="checkbox"] + div:hover svg {
+    opacity: 1;
+}
+
+.checkbox input[type="checkbox"] + div:hover svg path {
+    stroke: #E3E3E3;
+}
+
+/* Default pressing state */
+.checkbox input[type="checkbox"] + div:active {
+    border: 1px solid #BDBDBD;
+    outline: 3px solid #2469F619;
+}
+
+.checkbox input[type="checkbox"] + div:active svg {
+    opacity: 1;
+}
+
+.checkbox input[type="checkbox"] + div:active svg path {
+    stroke: #878787;
+}
+
+/* Checked state */
+.checkbox input[type="checkbox"]:checked + div {
+    background-color: #2469F6;
+    border: none;
+}
+
+.checkbox input[type="checkbox"]:checked + div svg {
+    opacity: 1;
+}
+
+.checkbox input[type="checkbox"]:checked + div svg path {
+    stroke: #FFFFFF;
+}
+
+/* Checked hover state */
+.checkbox input[type="checkbox"]:checked + div:hover {
+    background-color: #5087F8;
+    border: none;
+}
+
+.checkbox input[type="checkbox"]:checked + div:hover svg {
+    opacity: 1;
+}
+
+.checkbox input[type="checkbox"]:checked + div:hover svg path {
+    stroke: #FFFFFF;
+}
+
+/* Checked pressing state */
+.checkbox input[type="checkbox"]:checked + div:active {
+    background-color: #2469F6;
+    outline: 3px solid #2469F619;
+}
+
+.checkbox input[type="checkbox"]:checked + div:active svg {
+    opacity: 1;
+}
+
+.checkbox input[type="checkbox"]:checked + div:active svg path {
+    stroke: #FFFFFF;
+}
+
+/* Hide the default checkbox */
+.checkbox input[type="checkbox"] {
+    display: none;
+}
