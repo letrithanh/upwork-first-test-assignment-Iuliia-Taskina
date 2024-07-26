@@ -1,0 +1,25 @@
+.page-selector-widget-wrapper {
+    display: inline-block;
+}
+
+.page-selector-widget {
+    padding: 10px 0;
+    border-radius: 6px;
+    border: 1px solid #EEEEEE;
+    background-color: var(--color-white);
+    filter: drop-shadow(0 8px 15px #1414141F) drop-shadow(0 0 4px #1414141A);
+}
+
+.page-selector-widget .horizon-line {
+    padding: 10px 15px;
+}
+
+.page-selector-widget hr {
+    height: 0.7px;
+    border: none;
+    background-color: #CDCDCD;
+}
+
+.page-selector-widget .button-group {
+    padding: 10px 15px;
+}
